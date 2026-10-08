@@ -17,3 +17,17 @@ check("getGrade(85)", () => getGrade(85), "B");
 check("getGrade(72)", () => getGrade(72), "C");
 check("getGrade(60)", () => getGrade(60), "D");
 check("getGrade(41)", () => getGrade(41), "F");
+
+function getGrade(score) {
+  if (score >= 90) {
+    return "A";
+  } else if (score >= 80) {
+    return "B";
+  } else if (score >= 70) {
+    return "C";
+  } else if (score >= 60) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
