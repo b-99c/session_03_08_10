@@ -18,3 +18,14 @@ function maxOfThree(a, b, c) {
 check("maxOfThree(1, 2, 3)", () => maxOfThree(1, 2, 3), 3);
 check("maxOfThree(9, 4, 6)", () => maxOfThree(9, 4, 6), 9);
 check("maxOfThree(2, 8, 5)", () => maxOfThree(2, 8, 5), 8);
+function maxOfTwo(a, b) {
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+
+function maxOfThree(a, b, c) {
+  return maxOfTwo(maxOfTwo(a, b), c);
+}
