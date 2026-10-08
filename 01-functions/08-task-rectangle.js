@@ -20,3 +20,12 @@ check("area(5, 3)", () => area(5, 3), 15);
 check("area(10, 10)", () => area(10, 10), 100);
 check("perimeter(5, 3)", () => perimeter(5, 3), 16);
 check("perimeter(10, 10)", () => perimeter(10, 10), 40);
+
+
+function area(width, height) {
+  return width * height;
+}
+
+function perimeter(width, height) {
+  return 2 * (width + height);
+}
