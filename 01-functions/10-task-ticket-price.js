@@ -17,3 +17,13 @@ check("ticketPrice(4, false)", () => ticketPrice(4, false), 0);
 check("ticketPrice(25, true)", () => ticketPrice(25, true), 1);
 check("ticketPrice(65, false)", () => ticketPrice(65, false), 1);
 check("ticketPrice(30, false)", () => ticketPrice(30, false), 2);
+
+function ticketPrice(age, isStudent) {
+  if (age < 6) {
+    return 0;
+  } else if (age >= 60 || isStudent) {
+    return 1;
+  } else {
+    return 2;
+  }
+}
