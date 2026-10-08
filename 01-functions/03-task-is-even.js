@@ -14,3 +14,7 @@ function isEven(n) {
 check("isEven(4)", () => isEven(4), true);
 check("isEven(7)", () => isEven(7), false);
 check("isEven(0)", () => isEven(0), true);
+
+function isEven(n) {
+  return n % 2 === 0;
+}
