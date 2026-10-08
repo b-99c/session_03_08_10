@@ -13,3 +13,7 @@ function toOMR(baisa) {
 check("toOMR(1000)", () => toOMR(1000), 1);
 check("toOMR(1650)", () => toOMR(1650), 1.65);
 check("toOMR(250)", () => toOMR(250), 0.25);
+
+function toOMR(baisa) {
+  return baisa / 1000;
+}
