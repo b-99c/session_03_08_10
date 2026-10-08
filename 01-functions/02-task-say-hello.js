@@ -13,3 +13,7 @@ function sayHello(name) {
 // ----- Checks (do not edit) -----
 check("sayHello(\"Fatma\")", () => sayHello("Fatma"), "Hello, Fatma!");
 check("sayHello(\"Khalid\")", () => sayHello("Khalid"), "Hello, Khalid!");
+
+function sayHello(name) {
+  return `Hello, ${name}!`;
+}
