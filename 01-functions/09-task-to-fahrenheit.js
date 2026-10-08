@@ -14,3 +14,7 @@ check("toFahrenheit(0)", () => toFahrenheit(0), 32);
 check("toFahrenheit(100)", () => toFahrenheit(100), 212);
 check("toFahrenheit(45)", () => toFahrenheit(45), 113);
 check("toFahrenheit(-40)", () => toFahrenheit(-40), -40);
+
+function toFahrenheit(celsius) {
+  return (celsius * 9) / 5 + 32;
+}
