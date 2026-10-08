@@ -14,3 +14,11 @@ check("maxOfTwo(3, 7)", () => maxOfTwo(3, 7), 7);
 check("maxOfTwo(10, 2)", () => maxOfTwo(10, 2), 10);
 check("maxOfTwo(5, 5)", () => maxOfTwo(5, 5), 5);
 check("maxOfTwo(-1, -8)", () => maxOfTwo(-1, -8), -1);
+
+function maxOfTwo(a, b) {
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
+}
