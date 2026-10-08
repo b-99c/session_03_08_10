@@ -19,7 +19,7 @@ check("fizzBuzz(9)", () => fizzBuzz(9), "Fizz");
 check("fizzBuzz(10)", () => fizzBuzz(10), "Buzz");
 check("fizzBuzz(7)", () => fizzBuzz(7), "7");
 
-unction fizzBuzz(n) {
+function fizzBuzz(n) {
   if (n % 3 === 0 && n % 5 === 0) {
     return "FizzBuzz";
   } else if (n % 3 === 0) {
