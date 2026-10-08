@@ -15,3 +15,7 @@ check("isLeapYear(2024)", () => isLeapYear(2024), true);
 check("isLeapYear(1900)", () => isLeapYear(1900), false);
 check("isLeapYear(2000)", () => isLeapYear(2000), true);
 check("isLeapYear(2026)", () => isLeapYear(2026), false);
+
+function isLeapYear(year) {
+  return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+}
